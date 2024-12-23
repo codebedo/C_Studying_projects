@@ -10,6 +10,11 @@ class Otomobil {
 		string colour;
 };
 
+
+class motorsycle{
+	public;
+		string renk;
+};
 int main(){
 	
 	
