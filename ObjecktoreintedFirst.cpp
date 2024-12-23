@@ -3,7 +3,7 @@
 #include <iostream>
 
 using namespace std;
-
+/* this just an example 
 
 class Otomobil {
 	public:
@@ -14,7 +14,7 @@ class Otomobil {
 class motorsycle{
 	public;
 		string renk;
-};
+};*/
 int main(){
 	
 	
