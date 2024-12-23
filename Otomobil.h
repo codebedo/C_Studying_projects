@@ -1,9 +1,12 @@
-#pragma once 
-#include  <iostream>
-
-using namespace std;
+#pragma once
+#include <iostream>
 
 class Otomobil {
-	public:
-		string colour;
+public:
+    string colour;
+    string model;
+    int HorsePower;
+
+    void ShowRegistrationInformation();
 };
+
