@@ -6,7 +6,7 @@ using namespace std;
 int main(){
 	
 	int n;
-	cout << "Lutfen kac adet tam sayi icerecegini yaziniz: " << endl;
+	cout << "Pleasse write how many integer contents: " << endl;
 	
 	cin >> n ;
 	
