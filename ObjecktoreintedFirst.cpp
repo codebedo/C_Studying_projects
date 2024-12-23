@@ -10,7 +10,7 @@ class Otomobil {
 		string colour;
 };
 
-
+// yeah we can do this second class but this is the bad way , we shoul use object oriented programming
 class motorsycle{
 	public;
 		string renk;
