@@ -2,6 +2,12 @@
 
 using  namespace std;
 
+void printArray(int *arr, int size){
+	int arr[] = {10, 20, 30, 40};
+	int *p = arr;  // p points to the first element
+	p++;
+}
+
 int main(){
 	// Example 01
 	/*
@@ -28,6 +34,8 @@ int main(){
 	cout << *p << endl; // Print the value stored at the address in the pointer
 	*/
 	
+	// EXAMPLE 4
+	/*
 	int *ptr  = NULL; // ptr is now a null pointer
 	
 	if (ptr != NULL){
@@ -38,6 +46,7 @@ int main(){
 	
 	cout << *ptr << endl;
 	return 0;
+	*/
 }
 
 
