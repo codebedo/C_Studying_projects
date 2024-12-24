@@ -1,15 +1,13 @@
 #include <iostream>
 
 using  namespace std;
-
+/*
 void printArray(int *arr, int size){
-	int arr[] = {10, 20, 30, 40};
-	int *p = arr;  // p points to the first element
-	p++;
+	
 	
 	cout << arr[] << endl ;
 }
-
+*/
 int main(){
 	// Example 01
 	/*
