@@ -28,15 +28,15 @@ int main(){
 	cout << *p << endl; // Print the value stored at the address in the pointer
 	*/
 	
-	int *ptr  = nullptr; // ptr is now a null pointer
+	int *ptr  = NULL; // ptr is now a null pointer
 	
-	if (ptr != nullptr){
+	if (ptr != NULL){
 		
 		*ptr = 10;
 	}
 	
 	
-	cout << ptr << endl;
+	cout << *ptr << endl;
 	return 0;
 }
 
