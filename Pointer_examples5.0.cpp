@@ -25,4 +25,5 @@ int main() {
 	// print  the content of the address point_var points to
 	
 	cout << "Content of the address pointed to by point_var(*point_vat) = " << *point_var << endl;  
+	return 0;
 }
