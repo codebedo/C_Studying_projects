@@ -2,7 +2,7 @@
 
 using namespace std;
 
-struck Distance {
+struct Distance {
 	
 	
 	int feet;
