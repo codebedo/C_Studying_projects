@@ -1,6 +1,6 @@
 #include <iostream>
 
- using namspace std;
+ using namespace std;
  
  namespace Ritesh 
     {
@@ -11,5 +11,5 @@
     }
 void Ritesh::sum()
     {
-        cout <<a+b << endl;
+        cout << a+b << endl;
     }
