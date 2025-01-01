@@ -11,9 +11,18 @@ void greet(){
     
 }
 
+void printNum(int num) {
+  cout << num;   
+}
+
 int main() {
     
     // calling the function
+    
+    int n = 7;
+    
+    
+    printNum(n);
     
     greet();
     
