@@ -8,5 +8,8 @@ public:
     int HorsePower;
 
     void ShowRegistrationInformation();
+    Otomobil(string _colour, string _model, int _beygirGucu);
+    
+    
 };
 
