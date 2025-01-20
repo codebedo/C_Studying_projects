@@ -17,9 +17,16 @@ int main(){
     Otomobil  otomobil1, otomobil2;
     
     otomobil1.colour = "black";
+    otomobil1.HorsePower = 90;
+    otomobil1.model = "Reault";
+    
     otomobil2.colour = "white";
+    otomobil2.HorsePower = 120;
+    otomobil2.model = "Audi";
     
-    
+    otomobil1.RegistrationInfo();
+    cout << endl << endl;
+    otomobil2.RegistrationInfo();
     
     cout << endl ;
     
