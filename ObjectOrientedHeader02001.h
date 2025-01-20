@@ -10,6 +10,5 @@ class Otomobil {
         int HorsePower;
         string model;
         
-        
         void RegistrationInfo();
 };
