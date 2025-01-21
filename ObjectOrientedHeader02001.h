@@ -10,7 +10,8 @@ public:
     Otomobil(String _colour, int _HorsePower, string _model);
     void setModelYear(int _my);
     int getModelYear();
-    void setOtomobilClour(string _colour);
+    void setOtomobilColour(string _colour);
+    string getOtomobilColour(string _colour);
 
 private:
     string colour;
