@@ -14,7 +14,8 @@ public:
     string getOtomobilColour();
     void setOtomobilHorsePower(int _HorsePower);
     int getOtomobilHorsePower();
-    void set
+    void setOtomobilModel(string _model);
+    string getOtomobilModel();
       
 
 private:
