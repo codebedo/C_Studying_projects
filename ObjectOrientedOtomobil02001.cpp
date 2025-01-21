@@ -1,7 +1,7 @@
 #include "ObjectOrientedHeader02001.h"
 
 
-void Otomobil::RegistrationInfo(){
+void Otomobil::RegistrationInfo() {
     
     cout << "Colour: " << Otomobil::colour << endl;
     cout << "Hp: " << Otomobil::HorsePower << endl;
