@@ -18,7 +18,7 @@ void Otomobil::RegistrationInfo() {
 }
 
 
-void Otomobil::setOtomobilClour(string _colour){
+void Otomobil::setOtomobilColour(string _colour){
     colour = _colour;
     
 }
