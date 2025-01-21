@@ -23,15 +23,20 @@ void Otomobil::setOtomobilColour(string _colour){
     
 }
 
-string Otomobil::getOtomobilColour(string _colour) {
+string Otomobil::getOtomobilColour() {
     
-    return = _colour;
+    return  colour;
     
 }
 
 void Otomobil::setOtomobilHorsePower(int _HorsePower){
     HorsePower = _HorsePower;
-    int getOtomobilHorsePower();
+    
+}
+int getOtomobilHorsePower(){
+    return HorsePower;
+    
+}
     void setOtomobilModel(string _model);
     string getOtomobilModel();
       
