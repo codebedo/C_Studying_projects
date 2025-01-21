@@ -16,7 +16,8 @@ int main(){
     
     Otomobil  otomobil1("black", 90, "Renault");
     
-    otomobil1.colour = "beyaz";
+    otomobil1.setOtomobilColour("Beyaz");
+    
     Otomobil  otomobil2("white", 120, "Audi");
     
     
