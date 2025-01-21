@@ -2,7 +2,8 @@
 #include "ObjectOrientedHeader02001.h"
 
 
-using namespace std;
+Otomobil::Otomobil(String _colour, int _HorsePower, string _model)
+
 
 void Otomobil::RegistrationInfo() {
     
