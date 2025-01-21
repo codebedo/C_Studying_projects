@@ -1,4 +1,4 @@
-
+#pragma once
 #include <iostream>
 
 using namespace std;
@@ -11,4 +11,5 @@ public:
     string model;
         
     void RegistrationInfo();
+    Otomobil(String _colour, int _HorsePower, string _model);
 };
