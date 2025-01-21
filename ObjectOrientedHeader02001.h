@@ -12,4 +12,7 @@ public:
         
     void RegistrationInfo();
     Otomobil(String _colour, int _HorsePower, string _model);
+    void setModelYear(int _my);
+    int getModelYear();
+    
 };
