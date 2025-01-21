@@ -28,7 +28,11 @@ int main(){
     cout << endl << endl;
     otomobil2.RegistrationInfo();
     
+    
+    
     cout << endl ;
+    
+    cout << otomobil1.getOtomobilColour();
     
     return 0;
     
