@@ -5,10 +5,10 @@ using namespace std;
 
 
 class Otomobil {
-    public:
-        string colour;
-        int HorsePower;
-        string model;
+public:
+    string colour;
+    int HorsePower;
+    string model;
         
-        void RegistrationInfo();
+    void RegistrationInfo();
 };
