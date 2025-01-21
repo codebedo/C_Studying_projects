@@ -14,7 +14,7 @@ int main(){
     
     
     
-    Otomobil  otomobil1, otomobil2;
+    Otomobil  otomobil1("black", 90, "Renault");
     
     otomobil1.colour = "black";
     otomobil1.HorsePower = 90;
