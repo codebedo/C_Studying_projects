@@ -4,16 +4,13 @@
 using namespace std;
 
 
-class Otomobil {
-public:
-    string colour;
-    int HorsePower;
-    string model;
-        
+class Otomobil {;
+public:        
     void RegistrationInfo();
     Otomobil(String _colour, int _HorsePower, string _model);
     void setModelYear(int _my);
     int getModelYear();
+    void setOtomobilClr(string _colour);
 
 private:
     string colour;
