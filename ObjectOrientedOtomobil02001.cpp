@@ -7,4 +7,4 @@ void Otomobil::RegistrationInfo(){
     cout << "Hp: " << Otomobil::HorsePower << endl;
     cout << "Model: "<< Otomobil::model << endl;
 
-};
+}
