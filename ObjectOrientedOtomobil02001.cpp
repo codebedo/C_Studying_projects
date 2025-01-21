@@ -3,8 +3,8 @@
 
 void Otomobil::RegistrationInfo() {
     
-    cout << "Colour: " << Otomobil::colour << endl;
-    cout << "Hp: " << Otomobil::HorsePower << endl;
-    cout << "Model: "<< Otomobil::model << endl;
+    cout << "Colour: " << colour << endl;
+    cout << "Hp: " << HorsePower << endl;
+    cout << "Model: "<< model << endl;
 
 }
