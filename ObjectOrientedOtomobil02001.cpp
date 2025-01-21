@@ -33,10 +33,10 @@ void Otomobil::setOtomobilHorsePower(int _HorsePower){
     HorsePower = _HorsePower;
     
 }
-int getOtomobilHorsePower(){
+int Otomobil::getOtomobilHorsePower(){
     return HorsePower;
     
 }
-    void setOtomobilModel(string _model);
+void setOtomobilModel(string _model);
     string getOtomobilModel();
       
