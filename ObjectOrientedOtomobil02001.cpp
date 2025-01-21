@@ -16,3 +16,9 @@ void Otomobil::RegistrationInfo() {
     cout << "Model: "<< model << endl;
 
 }
+
+
+void Otomobil::setOtomobilClour(string _colour){
+    colour = _colour;
+    
+}
