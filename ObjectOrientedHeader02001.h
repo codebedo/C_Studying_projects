@@ -11,7 +11,11 @@ public:
     void setModelYear(int _my);
     int getModelYear();
     void setOtomobilColour(string _colour);
-    string getOtomobilColour(string _colour);
+    string getOtomobilColour();
+    void setOtomobilHorsePower(int _HorsePower);
+    int getOtomobilHorsePower();
+    void set
+      
 
 private:
     string colour;
