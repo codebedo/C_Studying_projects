@@ -28,3 +28,9 @@ string Otomobil::getOtomobilColour(string _colour) {
     return = _colour;
     
 }
+
+void setOtomobilHorsePower(int _HorsePower);
+    int getOtomobilHorsePower();
+    void setOtomobilModel(string _model);
+    string getOtomobilModel();
+      
