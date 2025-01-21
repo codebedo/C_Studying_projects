@@ -22,3 +22,9 @@ void Otomobil::setOtomobilColour(string _colour){
     colour = _colour;
     
 }
+
+string Otomobil::getOtomobilColour(string _colour) {
+    
+    colour = _colour;
+    
+}
