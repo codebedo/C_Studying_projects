@@ -25,6 +25,6 @@ void Otomobil::setOtomobilColour(string _colour){
 
 string Otomobil::getOtomobilColour(string _colour) {
     
-    colour = _colour;
+    return = _colour;
     
 }
