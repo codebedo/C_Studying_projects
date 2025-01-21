@@ -15,6 +15,7 @@ int main(){
     
     
     Otomobil  otomobil1("black", 90, "Renault");
+    Otomobil  otomobil2("white", 120, "Audi");
     
     
     
