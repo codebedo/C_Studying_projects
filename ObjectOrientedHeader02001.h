@@ -16,12 +16,16 @@ public:
     int getOtomobilHorsePower();
     void setOtomobilModel(string _model);
     string getOtomobilModel();
+    
+    void setMy(int _my);
+    int getMy();
       
 
 private:
     string colour;
     int HorsePower;
     string model;
+    int my;
     
     
 };
