@@ -19,6 +19,7 @@ int main(){
     otomobil1.setOtomobilColour("Beyaz");
     
     Otomobil  otomobil2("white", 120, "Audi");
+    otomobil2.setMy(2020);
     
     
     
