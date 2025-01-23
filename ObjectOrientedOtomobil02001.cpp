@@ -45,4 +45,14 @@ void Otomobil::setOtomobilModel(string _model){
 string Otomobil::getOtomobilModel(){
     return model;
 }
+
+void Otomobil::setMy(int _my){
+    my = _my;
+    
+}
+
+int Otomobil::getMy(){
+    return my;
+}
+    
       
