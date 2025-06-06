@@ -23,7 +23,7 @@ class LinkedList {
         
         void append(int value) {
             Node* newNode = new Node(value);
-            if (head)  {
+            if (!head)  {
                 head = newNode;
                 return;
                 
@@ -33,4 +33,17 @@ class LinkedList {
         while (temp->next)
             temp = temp -> next;
         temp->next = newNode;
+        
+        
+        void printList(){
+            Node* temp = head;
+            
+            while(temp) {
+                cout << temp->data << "->";
+                temp = temp -> next;
+                
+            }
+            
+            cout << "NULL">> endl;
+    }
     
