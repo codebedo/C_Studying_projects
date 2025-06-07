@@ -41,5 +41,19 @@ class Playlist {
             if (current)
                 cout << "Now playing: " << current->title<< endl;
             else
-                cout << "Playlist is empty.\n";       
+                cout << "Playlist is empty.\n";      
+                
+                
+        }
+        
+        
+        void nextSong(){
+            if (current && current->next)
+                current = current->next;
+                playCurrent();
+            else {
+                cout << "Reached end of playlist.\n";
+            }
+            
+        } 
 }
