@@ -5,14 +5,21 @@ using namespace std;
 
 int main(){
     
-    int arr[] = {1,2,3,5,6};
+    int arr01[10] ;
+    int j;
+    
+    for(j=0; j<10; j++){
+        cin>> arr01[j];
+    }
     
     
-    cout << arr[0] << endl;
-    int i;
-    for (i = 0; i <5; i++){
+    
+    
+    
+    
+    for (j = 0; j <10; j++){
         cout <<" Arrays element"<< endl;
-        cout << arr[i]<<endl;
+        cout << arr01[j]<<endl;
     }
     
     return 0;   
