@@ -39,6 +39,21 @@ int binarySearch(int arr[], int low, int high, int x)
     
          return -1;
          } 
+    if(low <= high)
+    {
+        int mid = low + (high - low) /2;
+        
+        if(arr[mid] == x)
+            return mid ;
+        
+        if(arr[mid] < x)
+            binarySearch(arr, hig, mid + 1, x);
+        else 
+            binarySearch(arr, lwo, mid -1 , x);
+            
+    }else {
+        return -1;
+    }
         
 }
 
