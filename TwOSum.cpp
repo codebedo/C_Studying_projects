@@ -87,7 +87,25 @@ class OneMapSolution {
 
 class leornSecond {
     public:
-        vector<int> twoSum(vector<int>& nums, int target){
+        
+        
+        vector<int> twoSum(vector<int>& nums, int target) {
+            unordered_map<int, int> numMap;
+            
+            for(int i = 0; i < nums.size(); i++){
+                    int complement = target - nums[i];
+                    
+                    if(numMap.count(complement)){
+                        return {numMap[complement],i};
+                        }
+                        
+                        numMap[nums[i]] = i;
+                        
+                }
+                return {};
+        
+        }
+        /*vector<int> twoSum(vector<int>& nums, int target){
             unordered_map<int, int> numMap;
             
             for(int i = 0; i < nums.size(); i++){
@@ -102,29 +120,28 @@ class leornSecond {
             return {];
             
         }
+        */
+        
 
-}
+};
     
 class learnSolt {
     public:
-        vector<int> twosum(vector<int>& nums, int target){
-            // tüm sayýlarý ve indexleri eþitliyoruz
-            unordered_map<int, int> numMap;
-            // tek seferde dolaþmak için bir for dögüsü yazýyoruz...
-            for(int i = 0 ; i < nums.size() ; i++){
-                // her sayýmýz için tamamlayýcýyý buluyoruz
-                int complement = target - nums[i];
-                // complement sayý daha önce görüldüyse bunu hash map' e ekliyoruz...
-                if(numMap.count(complement)){
-                    // burada ekleme iþi yapýlýyor
-                    return {numMap[complement], i };
-                }
+        vector<int> twosum(vecto<int>& nums, int target){
+                unordered_map<int, int> numMap;
                 
-                // þuanki sayyu hash mape ekliyor
-                numMap[nums[i]] = i ;
+                for(int i = 0; i < nums.size(); i++){
+                        int complement = target - nums[i];
+                        
+                        if(numMap.count(complement)){
+                                return {numMap[complement], i};
+                            }
+                            numMap[nums[i]] = i;
+                            
+                    }
+                    return {};
+                
             }
-            return {};
-        }
                 
 };
 
