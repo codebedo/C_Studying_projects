@@ -67,18 +67,68 @@ class OneMapSolution {
     public:
         
         vector<int> twoSum(vector<int>&  nums, int target){
+            // her bir dizi elemanýný ve indexini eþitliyoruz
             unordered_map<int, int> numMap;
+            //tek bir sefer de tüm dizi de dolaþýyor... 
             for(int i = 0; i < nums.size(); i++){
+                // her sayý için tamamlýyýcý hesaplýuyor
                 int complement = target - nums[i];
+                // dahg önce tamamalayýcýnýn görülüp görülmediðini kontrol ediyor...
                 if (numMap.count(complement)) {
                     return {numMap[complement], i};
                 }
+                // þuanki sayýyý hash mape ekliyor 
                 numMap[nums[i]] = i;
             }
             return {};
         }
     };
+
+
+class leornSecond {
+    public:
+        vector<int> twoSum(vector<int>& nums, int target){
+            unordered_map<int, int> numMap;
+            
+            for(int i = 0; i < nums.size(); i++){
+                int complement = target - nums[i];
+                
+                if(numMap.count(complement)){
+                    return {numMap[complement], i}
+                }
+                numMap[nums[i]] = i ;
+            }
+            
+            return {];
+            
+        }
+
+}
     
+class learnSolt {
+    public:
+        vector<int> twosum(vector<int>& nums, int target){
+            // tüm sayýlarý ve indexleri eþitliyoruz
+            unordered_map<int, int> numMap;
+            // tek seferde dolaþmak için bir for dögüsü yazýyoruz...
+            for(int i = 0 ; i < nums.size() ; i++){
+                // her sayýmýz için tamamlayýcýyý buluyoruz
+                int complement = target - nums[i];
+                // complement sayý daha önce görüldüyse bunu hash map' e ekliyoruz...
+                if(numMap.count(complement)){
+                    // burada ekleme iþi yapýlýyor
+                    return {numMap[complement], i };
+                }
+                
+                // þuanki sayyu hash mape ekliyor
+                numMap[nums[i]] = i ;
+            }
+            return {};
+        }
+                
+};
+
+
     int main(){
         
         vector<int> nums= {2,7,11,15};
@@ -87,12 +137,13 @@ class OneMapSolution {
         
         
         //Solution solution;
-        OneMapSolution fastsolution;
+        //OneMapSolution fastsolution;
+        learnSolt lsolt;
         
         
         //vector<int> result = solution.twoSum(nums, target);
-        vector<int> result = fastsolution.twoSum(nums, target);
-        
+       // vector<int> result = fastsolution.twoSum(nums, target);
+        vector <int> result = lsolt.twosum(nums, target);
         
         if(!result.empty()){
             cout<< "Indexes: " << result[0] << ", " << result[1] << endl;
