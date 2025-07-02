@@ -1,13 +1,15 @@
 #include <iostream>
 #include <vector>
+#include <unordered_map>
 
 using namespace std;
-
+/*
 // TWO SUM PROBLEMS FOR LEETCODE
 // FÝRST SOLUTÝON BRUTE FORCE
 class Solution {
         public:
-            
+        
+            // FÝRST SOLUTÝON BRUTE FORCE
             vector<int> twoSum(vector<int>& nums, int target){
                 // Tüm elemanlar arasýnda çifltler oluþturup kontrol ediyoruz
                 for (int i = 0; i < nums.size(); i++){
@@ -26,6 +28,39 @@ class Solution {
                //eðer hiçbir çift hedefi saðlamýyorsa boþ bir vectör döndür
                return {};
             }
+    };
+    
+    */
+    
+        /* TWO-PASS HASH MAP SOLUTÝON */
+    
+class Solution {
+    public:
+        
+        vector<int> twoSum(vector<int>& nums, int target){
+            unordered_map<int, int> numMap; // sayi index þeklinde eþleþtirme için hash map
+            
+            
+            //ilk döngüde tüm sayilari map'e ekliyoruz(deðer = index)
+            for(int i = 0; i < nums.size(); i++){
+                numMap[nums[i]] = i ;
+            }
+            
+            // ikinci döngüde her sayi için tamamalayýcý deðeri arýoyurz
+            for(int i = 0; i < nums.size(); i++){
+                int complement = target - nums[i];
+                
+                // eðer bu tamamlayici map'te varsa ve ayný index deðilse eþleþme bulundu 
+                if (numMap.count(complement) && numMap[complement] != i){
+                    return {i, numMap[complement]}; // Eþleþen index çifti döndürülür
+                }
+            }
+            
+            // hiçbir eþleþme bulunmadýysa boþ vector döndür
+            return {};
+            
+        }
+        
     };
     
     
