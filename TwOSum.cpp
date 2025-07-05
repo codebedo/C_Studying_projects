@@ -3,6 +3,31 @@
 #include <unordered_map>
 
 using namespace std;
+// Two sum problem solving example repeat again
+
+
+class Solving{
+    public:
+        vector<int> twosum(vector<int>& nums, int target) {
+                unordered_map<int, int> numMap;
+                
+                for(int i =0; nums.size(); i++){
+                        int complement = target - nums[i];
+                        if(numMap.count(complement)){
+                                return{numMap[complement], i};
+                            }
+                            
+                            numMap[nums[i]] = i;
+                    }
+                    
+                    return {} ;
+            
+            }
+        
+        };
+
+
+
 /*
 // TWO SUM PROBLEMS FOR LEETCODE
 // FÝRST SOLUTÝON BRUTE FORCE
@@ -30,9 +55,9 @@ class Solution {
             }
     };
     
-    */
     
-        /* TWO-PASS HASH MAP SOLUTÝON */
+    
+         TWO-PASS HASH MAP SOLUTÝON 
     
 class Solution {
     public:
@@ -103,9 +128,27 @@ class leornSecond {
                         
                 }
                 return {};
+                
+                
+                
         
         }
-        /*vector<int> twoSum(vector<int>& nums, int target){
+        
+        vector<int> twosum(vector<int>& nums, int target){
+            unordered_map<int , int> numMap;
+            for(int i = 0; i< nums.size(); i++){
+                int complement = target - nums[i];
+                
+                if(numMap.count(complement)){
+                    return {numMap[complement], i};
+                    }
+                    
+                    num[nums[i]] = i;
+                }
+            }
+            return {};
+        }
+        vector<int> twoSum(vector<int>& nums, int target){
             unordered_map<int, int> numMap;
             
             for(int i = 0; i < nums.size(); i++){
@@ -120,7 +163,7 @@ class leornSecond {
             return {];
             
         }
-        */
+        
         
 
 };
@@ -145,6 +188,26 @@ class learnSolt {
                 
 };
 
+
+class learnfridat{
+    public: 
+        vector <int> twosum(vector<int>& nums, int target) {
+            unordered_map<int, int> numMap;
+            for(int i = 0; i < nums.size(); i++){
+                int complement = target - nums[i];
+                if(numMap.count(complement)){
+                    return {numMap[complement], i};
+                    }
+                    numMap[nums[i]] = i;
+                }
+                
+                return {};
+                
+            
+            }
+            
+        
+    };
 
     int main(){
         
@@ -171,4 +234,29 @@ class learnSolt {
         
         
         return 0;
+    }
+*/
+
+
+
+
+int main(){
+    
+    
+    vector<int> nums = {2,7,2,34};
+    int target = 9;
+    
+    Solving solve;
+    
+    vector<int> result = solve.twosum(nums,target);
+    
+    
+    if(!result.empty()){
+        cout << "Indexes: " << result[0] << ", " << result[1] << endl;
+    } else {
+        cout << "No solution found."<< endl;
+    }
+    
+    return 0;
+    
     }
