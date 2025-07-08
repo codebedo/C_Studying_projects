@@ -1,24 +1,36 @@
 #include <iostream>
-
 using namespace std;
 
-int main(int argc, const char* argv[]){
-    
-    printf("bir sayi giriniz: ");   
-    
-    
-    int sayi;
-        std:: cin >> sayi;
+class Solution {
+    public :
+        bool isPalindrome(int x){
+                int reversed = 0;
+                int original = x;
+                while(x> 0){
+                    reversed = reversed * 10 +(x%10);
+                    x /= 10;
+                    
+                    }
+                    
+                    return reversed == original ;
             
-            while(sayi > 0) {
-                std::cout << sayi%10 <<std::endl;
-                
-                
-                
-                sayi = sayi/10;
+            }
         
-        }
+};
+
+
+int main(){
     
-    return 0;
-    
-}
+        Solution solution;
+        
+       int TestCases[] = {121, -121, 10, 12321, 123};
+       for(int x : TestCases){
+          cout << "Sayi :  " << x
+               << "-> Palindrome ? "
+               << (solution.isPalindrome(x) ? "Evet" : "Hayir") << endl;
+       }
+       
+       
+       return 0;
+    }
+     
