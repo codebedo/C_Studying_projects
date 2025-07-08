@@ -5,7 +5,7 @@
 using namespace std;
 // Two sum problem solving example repeat again
 
-
+/*
 class Solving{
     public:
         vector<int> twosum(vector<int>& nums, int target) {
@@ -24,7 +24,29 @@ class Solving{
             
             }
         
-        };
+        };*/
+        
+class Solution{
+        public: 
+            vector<int> TwoSum(vector<int>& nums, int target){
+                    unordered_map<int, int> numMap;
+                    
+                    for(int = 0; i < nums.size(); i++){
+                        
+                            int complement = target - nums[i];
+                            
+                            if(numMap.count(complement)){
+                                    return{numMap[complement], i};
+                                    
+                                }
+                                numMap[nums[i]] = i;
+                        }
+                        
+                        return {};
+                
+                }
+
+};
 
 
 
@@ -246,9 +268,9 @@ int main(){
     vector<int> nums = {2,7,2,34};
     int target = 9;
     
-    Solving solve;
+    Solution solution;
     
-    vector<int> result = solve.twosum(nums,target);
+    vector<int> result = solution.TwoSum(nums,target);
     
     
     if(!result.empty()){
