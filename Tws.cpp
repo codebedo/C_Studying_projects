@@ -4,7 +4,25 @@
 
 using namespace std;
 
+class MineSolution {
+        public.
+        vector<int> twosum(vector<int>& nums, int target){
+                unordered_map<int, int> numMap;
+                
+                for(int i = 0; i<nums.size(); i++){
+                        int complement = target - nums[i];
+                        if(numMap.count(complemet)){
+                                return {numMap[complement], i};
+                            }
+                            
+                            numMap[nums[i]] = i;
+                    
+                    }
+            }
+            
+            return {};
 
+};
 class Solution {
         public:
             
@@ -46,5 +64,17 @@ int main() {
     
     
     return 0;
+    
+    
+    vector<int> nums = {12,88,5,7,9};
+    int target = 16;
+    MineSolution mninsoluntion;
+    
+    vector<int> result = mninsolution.twosum(nums, target);
+    
+    
+    if(!result.empty()){
+            cout<< "Indexes" << result[0] << result[1] << endl;
+    }else{}
 }
 
