@@ -18,14 +18,26 @@ int main(){
     //cin >> arr[1][2];
     //cout << "value : " << arr[1][2];
     
+    
+    // third example
+    /*
     for (int i = 0 ; i< 2; i++){
             for(int j = 0; j < 3; j++){
                     cout <<  arr[i][j] << " " << endl;
                 }
-        }
+        }*/
+        
+    // Fourth Example
+    /*int sumArr = 0;
+    
+    cout << arr[0][3] <<" " << endl;
+    cout << arr[1][2] <<" " <<endl;
+    
+    sumArr =  arr[0][3] + arr[1][2];
+    cout << sumArr << endl;
     
      
-    cout << endl;
+    cout << endl;*/
     return 0;
     
     }
