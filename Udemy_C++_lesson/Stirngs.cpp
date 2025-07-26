@@ -23,5 +23,11 @@ int main(){
         
         
         cout << "Lenght: " << length << endl;
+        
+        string mystr = "hello";
+        mystr.append("C++");
+        cout << mystr<< endl;
+        
+        return 0;
     
     }
