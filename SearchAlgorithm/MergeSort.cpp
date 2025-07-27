@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -7,11 +8,11 @@ using namespace std;
 // firs subarray is arr[left..mid]
 // Seconf subarray is arr[mid+1..right]
 
-void merge(vector<int>& arr, int lef,
+void merge(vector<int>& arr, int left,
                         int mid, int right){
                             
-    int n1 = mid -left + 1;
-    int n2 = right -mid;
+    int n1 = mid - left + 1;
+    int n2 = right - mid;
     
     
     //create temp vectors
