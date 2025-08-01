@@ -26,6 +26,8 @@ int main(){
             for(int j = 1; j <= i; j++){
                     if(i % j == 0)
                         counter++;
+                    if(counter > 2)
+                        break;
                 }
                 
                 if(counter == 2)
