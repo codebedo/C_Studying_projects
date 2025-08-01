@@ -10,7 +10,7 @@ int main(){
     cout << a << endl ;
     cin >> b ;
     cout << b << endl;
-    
+    /*
     for( int i = 1 ; i <= b; i++){
             
         
@@ -18,6 +18,18 @@ int main(){
                 cout << i << endl;
                     
             }
+        }*/
+        
+        
+        for(int i = 1 ; i <= b ; i++){
+            int counter = 0;
+            for(int j = 1; j <= i; j++){
+                    if(i % j == 0)
+                        counter++;
+                }
+                
+                if(counter == 2)
+                    cout<< i << ", ";    
         }
     
     
