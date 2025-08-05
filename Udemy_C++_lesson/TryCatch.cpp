@@ -17,9 +17,21 @@ int main(){
     cin >> bolunen;
     
     
-    int sonuc = bolunen / bolen ;
+    try {
+        if ( bolen == 0)
+            throw 99;
+        int sonuc = bolunen / bolen;    
+        cout << "sonuc : " << sonuc  << endl ;
+        
+    }
+    catch(int errorKode){
+            cout<<"Error kode " << errorKode  << " dividing number cannot be 0 !"<< endl;
+        }
     
-    cout << "sonuc : " << sonuc  << endl ;
+    
+    
+    
+    
         
     
 }
