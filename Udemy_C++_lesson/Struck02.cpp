@@ -12,25 +12,61 @@ struct Student{
     double  PointScore;
 };
 
-
+/// just one object processing...
 void StudentStatsPrint(Student stude)
 {
     
     if(stude.PointScore < 50)
     {
-        cout<<stude.name <<  " what is this bro wtf" << endl;    
+        cout<< " what is this bro wtf" << endl;    
     }
     else {
         
-            cout << stude.name << " congrutaliaons<< endl"<< endl;
+            cout << " congrutaliaons "<< endl;
         }
 
     
 }
+// for the all student print stats ...
+
+void AllStudentsPrint(Student students[], int size){
+      
+    cout << "\n students Stats \n" ;
+    for(int i = 0 ; i < 3; i++){
+        cout << students[i].student_no << "  " <<
+                students[i].name << "  " << 
+                students[i].PointScore << "  ";
+        StudentStatsPrint(students[i]);
+    }
+
+}
+
+
 
 int main(){
     
-    Student students[3];
+    
+    Student* ptr = new Student;
+    
+    cout << "Student no: " ;
+    cin >> ptr->student_no;
+    cin.ignore();
+    
+    cout << "Name: ";
+    getline(cin, ptr->name);
+    
+    cout << "Point score: ";
+    cin >> ptr->PointScore;
+    
+    cout << ptr-> student_no << " " << ptr->name << " " << ptr->PointScore << endl;
+    
+    delete ptr;
+    
+    
+    return 0;
+    //Student students[3];
+    
+    
     /*
     
     for(int i = 0; i < 3; i++){
@@ -67,9 +103,14 @@ int main(){
     Student student1 = {302, "Onur Tanis", 3.50};
     
     cout << student1.student_no << " " << student1.name << " " << student.PointScore << endl;*/
+    /*
     
+    Student Students[3] = {
+        {101, "Bedirhan Aydin", 05},
+        {102, "John Tress", 60},
+        {103, "Terry Davis", 100},
+    };
     
-    Student student1 = {101, "Bedirhan Aydin", 05};
-    StudentStatsPrint(student1);
+    AllStudentsPrint(Students, 3);*/
     
 }
