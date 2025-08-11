@@ -46,6 +46,40 @@ void AllStudentsPrint(Student students[], int size){
 int main(){
     
     
+    int n;
+    
+    cout << "How many students must be saved ? ";
+    cin >> n;
+    cin.ignore();
+    
+    Student *students = new Student[n];
+    
+    for(int i = 0; i < n; i++)
+    {
+        
+        cout << i + 1 << ".student_no: ";
+        cin >> students[i].student_no;
+        cin.ignore();
+        cout << "Name: ";
+        getline(cin, students[i].name);
+        
+        cout << "Point score: ";
+        cin >> students[i].PointScore;
+                
+    }
+    
+    cout << "\n Students List: \n";
+    for(int i = 0; i < n; i++)
+    {
+        cout << i <<  " : " <<  students[i].student_no  << "   "  << students[i].name << " " << students[i].PointScore << "\n" << endl;  
+        
+    }
+    
+    delete[] students;
+    return 0;
+    
+    
+    /*
     Student* ptr = new Student;
     
     cout << "Student no: " ;
@@ -63,7 +97,7 @@ int main(){
     delete ptr;
     
     
-    return 0;
+    return 0;*/
     //Student students[3];
     
     
