@@ -12,6 +12,7 @@ int main(){
     otomobil1.setOtomobilRenk("beyaz"); // Private define test look at the Otomobil.h...
     
     Otomobil otomobil2("Mavi", "opel", 100);
+    otomobil2.model = "Reanult" ;
     
     /*
     otomobil1.renk = "black";
@@ -22,10 +23,18 @@ int main(){
     otomobil2.model = "renault";
     otomobil2.hp = 100 ;
     */
-    
+    /*
     otomobil1.PapersInfo();
     cout << endl << endl;
-    otomobil2.PapersInfo();
+    otomobil2.PapersInfo();*/
+    
+    
+    cout << otomobil1.getOtomobilRenk() << " " ;
+    cout << otomobil1.getOtomobilModel() << " ";
+    cout << otomobil1.getOtomobilHp();
+    cout << otomobil2.model ;
+    
+    
     
     
     cout << endl;
