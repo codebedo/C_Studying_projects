@@ -23,3 +23,21 @@ string Otomobil::getOtomobilRenk(){
     return renk;    
     
 }
+
+
+void Otomobil::setOtomobilModel(string _model){
+    model = _model;
+        
+}
+
+string Otomobil::getOtomobilModel(){
+    return model;
+}
+
+void Otomobil::setOtomobilHp(int _hp){
+    hp = _hp;
+}
+
+int Otomobil::getOtomobilHp(){
+    return hp;
+}
