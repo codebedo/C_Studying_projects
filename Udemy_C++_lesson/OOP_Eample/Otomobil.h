@@ -15,10 +15,13 @@ public:/*
     void PapersInfo();
     // Constructer functions
     Otomobil(string _renk,string _model , int _hp);
-    void setModelYear(int _my);
-    int getModelYaar();
+    void setOtomobilModel(string _model);
+    string getOtomobilModel();
     void setOtomobilRenk(string _renk);
-    void getOtomobilRenk();
+    string getOtomobilRenk();
+    void setOtomobilHp(int _hp);
+    int getOtomobilHp();
+    
 // Private Tests
 
 private:
