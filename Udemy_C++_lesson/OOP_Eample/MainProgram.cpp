@@ -7,11 +7,11 @@ using namespace std;
 
 int main(){
    
-    Otomobil otomobil1("siyah", "audi", 200);
+    Otomobil otomobil1("siyah", "audi", 200, 5);
     
     otomobil1.setOtomobilRenk("beyaz"); // Private define test look at the Otomobil.h...
-    
-    Otomobil otomobil2("Mavi", "opel", 100);
+    otomobil1.PapersInfo();
+    Otomobil otomobil2("Mavi", "opel", 100,4);
     otomobil2.setOtomobilModel("wolksvagen");
     
     
@@ -37,14 +37,21 @@ int main(){
     
     // pointer with classes
     
-    
+    /*
     Otomobil* p;
     p = &otomobil1;
     p->PapersInfo();
     p = &otomobil2;
     p->PapersInfo();
+    */
     
-    p = new Otomobil("yellow", "BmW", 200);
+    // we can reach to door count wiht like this
+    
+    //cout << "Otomobil1 door count: " << *(otomobil1.pDoorCount) << endl;
+    //cout << "Otomobil2 door count : " << *(otomobil2.pDoorCount) << endl;
+    Otomobil *p = new Otomobil("yellow", "BmW", 200, 4);
+    // if we calling with pointer we used to do this p->pDoorCount...
+    //cout << "BMW door count : " << *(p->pDoorCount) << endl;
     p->PapersInfo();
     // """DESTRUCTORS (C++ only)"""
     // destructor are usually used to
