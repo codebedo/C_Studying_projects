@@ -11,10 +11,14 @@ public:/*
     string model;
     int hp;*/
     
-    
-    void PapersInfo();
     // Constructer functions
     Otomobil(string _renk,string _model , int _hp);
+    // """DESTRUCTORS (C++ only)"""
+    // destructor are usually used to
+    // deallocate memory and do other cleanup for a classes object and its class members when the object is destroyed.
+    // A destuctor is called for a class object when that object passes out of scope or is explicitly deleted.
+    ~Otomobil();
+    void PapersInfo();
     void setOtomobilModel(string _model);
     string getOtomobilModel();
     void setOtomobilRenk(string _renk);
