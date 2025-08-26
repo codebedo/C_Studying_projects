@@ -17,6 +17,7 @@ Otomobil::Otomobil(string _renk,string _model , int _hp, int dc){
 Otomobil::~Otomobil(){
     // if we want to which one is called just typing model...
     cout << Otomobil::model<< "  " << "Destructor has been called" << endl;
+    delete pDoorCount;
     
 }
 void Otomobil::PapersInfo(){
