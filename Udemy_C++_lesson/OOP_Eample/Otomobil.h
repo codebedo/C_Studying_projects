@@ -12,7 +12,7 @@ public:/*
     int hp;*/
     
     // Constructer functions
-    Otomobil(string _renk,string _model , int _hp);
+    Otomobil(string _renk,string _model , int _hp, int dc);
     // """DESTRUCTORS (C++ only)"""
     // destructor are usually used to
     // deallocate memory and do other cleanup for a classes object and its class members when the object is destroyed.
@@ -25,6 +25,8 @@ public:/*
     string getOtomobilRenk();
     void setOtomobilHp(int _hp);
     int getOtomobilHp();
+    
+    int *pDoorCount;
     
 // Private Tests
 
