@@ -12,7 +12,8 @@ int main(){
     otomobil1.setOtomobilRenk("beyaz"); // Private define test look at the Otomobil.h...
     
     Otomobil otomobil2("Mavi", "opel", 100);
-    otomobil2.model = "Reanult" ;
+    otomobil2.setOtomobilModel("wolksvagen");
+    
     
     /*
     otomobil1.renk = "black";
@@ -26,14 +27,26 @@ int main(){
     /*
     otomobil1.PapersInfo();
     cout << endl << endl;
-    otomobil2.PapersInfo();*/
-    
-    
+    otomobil2.PapersInfo();
     cout << otomobil1.getOtomobilRenk() << " " ;
     cout << otomobil1.getOtomobilModel() << " ";
     cout << otomobil1.getOtomobilHp();
     cout << otomobil2.model ;
+    */
     
+    
+    // pointer with classes
+    /*
+    
+    Otomobil* p;
+    p = &otomobil1;
+    p->PapersInfo();
+    p = &otomobil2;
+    p->PapersInfo();
+    
+    p = new Otomobil("yellow", "BmW", 200);
+    p->PapersInfo();
+    */
     
     
     
