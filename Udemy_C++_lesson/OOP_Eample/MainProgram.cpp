@@ -36,7 +36,7 @@ int main(){
     
     
     // pointer with classes
-    /*
+    
     
     Otomobil* p;
     p = &otomobil1;
@@ -46,7 +46,12 @@ int main(){
     
     p = new Otomobil("yellow", "BmW", 200);
     p->PapersInfo();
-    */
+    // """DESTRUCTORS (C++ only)"""
+    // destructor are usually used to
+    // deallocate memory and do other cleanup for a classes object and its class members when the object is destroyed.
+    // A destuctor is called for a class object when that object passes out of scope or is explicitly deleted.
+    delete p; // if you down wiht pointers you have to delete to it , because its gone be a bug alright...
+    
     
     
     
