@@ -33,4 +33,22 @@ static const map<int, int> BOX_INTERVAL = {
 
 
 long long todayEpochDays(){
+    using namespace std::chrono;
+    auto now = system_clock::now();
+    auto days = duration_cast<duration<long long,ratio<86400>>>(floor<days>(now).time_since_epoch());
+    return days.count();
+    
+}
+
+string escapeField(const string &s){
+    string out; out.reserve(s.size());
+    for(chat c: s){
+        if(c=='\t') { out += "\\t";}
+        else if(c=='\n') { out += "\\n"; }
+        else if(c=='\r') {/* skip */ }
+        else {out += c; }
     }
+    return out;
+}
+
+string unescapeField(const string &s)
