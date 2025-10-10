@@ -36,6 +36,8 @@ int main() {
         
     }
     */
+    
+    /*
     // Char example 
     
     vector<char> v = {'a', 'f', 'd'};
@@ -50,4 +52,26 @@ int main() {
     for(int i = 0; i < v.size(); i++)
         cout << v[i] << " ";
     return 0;
+    
+    */
+    
+    
+    
+    
+    vector<int> v = {10, 20, 30, 40};
+    
+    // Accessing using operator[]
+    
+    cout << " Element at index 2 using []: " << v[2] << endl;
+    
+    // Accessing using at()
+    
+    cout << " Element at index 3 using at(): " << v.at(3) << endl;
+    
+    // Uncommenting the next line will throw an
+    // out_of_range_exception
+    // cout v.at(10)<<endl;
+    
+    return 0;
+    
 }
