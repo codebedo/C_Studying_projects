@@ -56,7 +56,7 @@ int main() {
     */
     
     
-    
+    /*
     
     vector<int> v = {10, 20, 30, 40};
     
@@ -72,6 +72,19 @@ int main() {
     // out_of_range_exception
     // cout v.at(10)<<endl;
     
+    return 0;*/
+    
+    vector<int> v = {10, 20, 30};
+    cout << "Original vlue at index 1: " << v[1] << endl;
+    
+    // updating the element at index q
+    v[1] = 50;
+    
+    cout << "Updated value at index 1: " << v[1] << endl;
+    
+    
     return 0;
+    
+    
     
 }
