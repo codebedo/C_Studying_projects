@@ -76,7 +76,7 @@ int main(){
     num.push_back(7);
     
     
-    cout << "\n updated Vector: ";
+    cout << "\nUpdated Vector: ";
     
     
     for(const int& i : num) {
@@ -85,7 +85,27 @@ int main(){
     }    
     
     
-    return 0;
+    vector<int> num1{1,2,3,47,8,74};
+    
+    cout << "\nInitial Vector: ";
+    for(const int& i : num1) {
+        cout << i << " " ;    
+    }
+    
+    // add the integers 10  and 11 to the vector
+    
+    num1.push_back(10);
+    num1.push_back(11);
+    
+    
+    cout << "\nUpdated Vector: ";
+    
+    for(const int& i : num1){
+        
+        cout << i << " " ;    
+    }
+    
+
     
     return 0;
     
