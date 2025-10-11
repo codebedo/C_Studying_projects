@@ -213,6 +213,32 @@ int main(){
     }
     cout << "\n " ;
     /******Example 6 Ending*********/
+    /******Example 7 starting********
+    
+    vector<int> myvector;
+    for(int i = 1; i <= 5 ; i++) myvector.push_back(i);
+    
+    cout << "myvector contains: ";
+    for(std::vector<int>::iterator it = myvector.begin(); it != myvector.end(); ++it)
+        cout << ' ' << *it;
+    cout << '\n';*/
+    
+    
+    vector<int> num;
+    for(int i = 1; i <= 5; i++) num.push_back(i);
+    
+    cout << "\n Initial vector : " ;
+    for(const int& i : num) {
+        cout << i << " " ;    
+    }
+    cout << "\n";
+    for(vector<int>::iterator it = num.begin(); it !=num.end(); ++it)
+        cout << ' ' << *it;
+        
+    cout << "\n";
+    
+  
+
 
     
     return 0;
