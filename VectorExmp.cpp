@@ -60,7 +60,7 @@ int main(){
     ********* example 2 ending *********/
     
     
-    /*******Example 3 Starting ***********/
+    /*******Example 3 Starting **********
     
     
     vector<int> num{1,2,3,4,5};
@@ -104,6 +104,40 @@ int main(){
         
         cout << i << " " ;    
     }
+    
+    vector<int> num2{12,32,25,65,48};
+    
+    cout << "\nInitial vector";
+    
+    for(const int& i : num2){
+        
+        cout << i << " " ;    
+    }
+    
+    // add elements 78,98
+    
+    num2.push_back(78);
+    num2.push_back(98);
+    
+    cout << "\nUpdated vector " ;
+    
+    for(const int& i : num2){
+        
+        cout << i << " " ;    
+    }
+    /*******Example 3 Ending ***********/
+    
+    
+    vector<int> num{1,2,3,4,5};
+    
+    cout << "Element index 0 : " << num.at(0) << endl;
+    cout << "Element index 1 : " << num.at(1) << endl;
+    cout << "Element index 2 : " << num.at(2) << endl;
+    cout << "Element index 3 : " << num.at(3) << endl;
+    cout << "Element index 4 : " << num.at(4) << endl;
+    
+    
+    
     
 
     
