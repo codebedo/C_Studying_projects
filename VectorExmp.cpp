@@ -248,9 +248,36 @@ int main(){
         cout << i << " " ;
     }
     
-    cout << "\n";
+    cout << "\n Updated vector: ";
     
-
+    num.push_back(9);
+    
+    for(const int& i : num){
+        cout << i << " " ;    
+    }
+    
+    num.erase(num.begin(), num.begin()+3);
+    cout << "\n Erased with beginin vector : ";
+        
+    
+    for(const int& i : num) {
+        cout << i << " " ;    
+    }
+    
+    num.push_back(1);
+    num.push_back(2);
+    
+    //for(vector<int>::iterator it = num.begin(); it != num.end(); ++it)
+      //  cout << ' ' << *it;
+        
+        
+    
+    cout << "\n Erased with end vector: ";
+    for(const int& i : num){
+        cout << i << " " ;    
+    }
+    
+    
     
     return 0;
     
