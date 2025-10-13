@@ -222,7 +222,7 @@ int main(){
     for(std::vector<int>::iterator it = myvector.begin(); it != myvector.end(); ++it)
         cout << ' ' << *it;
     cout << '\n';*/
-    
+    /******Example 7 starting*********
     
     vector<int> num;
     for(int i = 1; i <= 5; i++) num.push_back(i);
@@ -237,8 +237,19 @@ int main(){
         
     cout << "\n";
     
-  
-
+    /******Example 7 Ending*********/
+    /******Example 8 starting*******/
+    
+    vector<int> num;
+    for(int i = 1; i <= 5; i++) num.push_back(i);
+    
+    cout << "\n Initial vector: " ;
+    for(const int& i : num) {
+        cout << i << " " ;
+    }
+    
+    cout << "\n";
+    
 
     
     return 0;
