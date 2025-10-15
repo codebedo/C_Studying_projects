@@ -18,4 +18,16 @@ int main(){
         
         cout << i << " " ;    
     }
+    
+    
+    num.erase(num.end() -3, num.end());
+    
+    cout << "\nUpdated Vector : " ;
+    
+    
+    for(const int& i : num) {
+        
+        cout << i << " ";    
+    } 
+    
 }
