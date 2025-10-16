@@ -91,7 +91,7 @@ int main() {
     cout << v.size();
     */
     
-    vector<char> v = {'a', 'c','f', 'd', 'z'};
+   /* vector<char> v = {'a', 'c','f', 'd', 'z'};
     
     // Travering vector using range based for loop
     
@@ -99,6 +99,18 @@ int main() {
         cout << v[i] << " ";
      
         
+    return 0;*/
+    
+    
+    vector<char> v = {'a', 'c', 'e', 'g', 'k'};
+    
+    
+    for(const char& i : v){
+        
+        cout << i << " " ;
+    }
+    
+    
     return 0;
     
     
