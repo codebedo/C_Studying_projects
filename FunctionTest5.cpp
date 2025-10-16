@@ -2,6 +2,14 @@
 
 using namespace std;
 
+int divide(int a , int b) {
+    
+    int r;
+    r = a/ b;
+    
+    return(r);
+        
+}
 int addition(int a, int b)
 {
     
@@ -42,11 +50,23 @@ int main(){
     cout << "The subtotal is " << subtotal;
     
     int x = 1, y =3 , j = 7;
-    
+    cout << "\n";
     dublicate(x,y,j);
     cout<< "x = " << x << "y = " << y << ", j = " << j;
-    return 0;
     
+    cout << "\n";
+
+    
+    int dv1;
+    
+    cout << "if you want to divide please entered ";
+    cin >> dv1;
+
+    int lastTotal;
+    lastTotal = divide(addition(5,3), dv1);
+    
+    cout << "\n dived total per pay : is " << lastTotal ;
+    return 0;
 }
 
 
