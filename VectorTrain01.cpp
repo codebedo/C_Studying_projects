@@ -45,13 +45,55 @@ T fixed_multiply(T val)
     return val * N;    
 }
         
+// General calculating Template function example
+
+template <class T>
+T average(const vector<T>& values){
+    T sum = 0;
+    for(auto v : values)
+        sum += v;
+    return sum / values.size();
+}
+
+
+// Template class : Director Class
+
+template <class T>
+class DataAnalyzer {
+    vector<T> data;
+    
+   public:
+        void add(T value) { data.push_back(value);}
+        
+        T getAverage() const {
+            return average(data); // Calling top template function    
+        }    
+        
+        
+        void print() const {
+            cout << "Data: " ;
+            for( auto v : data) cout << v << " " ;
+            cout << "\n Average: " << getAverage() << "\n\n";    
+        }
+};
     
 int main() {
     
     
+    DataAnalyzer<int> intAnalyzer;
+    intAnalyzer.add(10);
+    intAnalyzer.add(20);
+    intAnalyzer.add(30);
+    intAnalyzer.print();
     
+    DataAnalyzer<double> doubleAnalyzer;
+    doubleAnalyzer.add(2.5);
+    doubleAnalyzer.add(3.5);
+    doubleAnalyzer.add(4.5);
+    doubleAnalyzer.print();
+    /*
     cout << fixed_multiply<int , 2>(10) << '\n';
-    cout << fixed_multiply<float, 3>(10.005) << '\n';
+    cout << fixed_multiply<float, 3>(10.005) << '\n';*/
     
    /* 
     if (are_equal(10, 10.0))
