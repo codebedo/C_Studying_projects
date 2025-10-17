@@ -35,9 +35,22 @@ bool are_equal(T a, U b)
     return (a==b);    
 }
     
+    
+// Template class
+
+template <class T, int N>
+T fixed_multiply(T val)
+{
+    return val * N;    
+}
         
     
 int main() {
+    
+    
+    
+    cout << fixed_multiply<int , 2>(10) << '\n';
+    cout << fixed_multiply<int, 3>(10) << '\n';
     
    /* 
     if (are_equal(10, 10.0))
@@ -47,6 +60,7 @@ int main() {
         */
     
     // First triying boolalpha alg.
+    /*
     
     cout << boolalpha; // write with true false
     
@@ -55,7 +69,7 @@ int main() {
     cout << are_equal('A',65) << endl;
     cout << are_equal(string("hi"), "hi") << endl;
     cout << are_equal(3.14,3) << endl;
-    
+    */
     
     /*
         
