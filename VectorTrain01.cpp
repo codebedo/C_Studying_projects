@@ -37,7 +37,8 @@ bool are_equal(T a, U b)
     
     
 // Template class
-
+//Temlate is doing this this is ý want ýa want to T type of value and N is my value ,
+// function <T, n>(Value)
 template <class T, int N>
 T fixed_multiply(T val)
 {
@@ -50,7 +51,7 @@ int main() {
     
     
     cout << fixed_multiply<int , 2>(10) << '\n';
-    cout << fixed_multiply<int, 3>(10) << '\n';
+    cout << fixed_multiply<float, 3>(10.005) << '\n';
     
    /* 
     if (are_equal(10, 10.0))
