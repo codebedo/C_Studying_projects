@@ -12,19 +12,31 @@ int callByVector(int a, int b) {
     {
         cout << i << " " ;    
     }
+    
+    cl_Vector.erase(cl_Vector.end() -1, cl_Vector.end());
+    cout << "\n" ;
+    
+    for(const int& i : cl_Vector)
+    {
+        cout << i << " " ;
+    }
+    
+    
 }
 
 int main() {
     
         
-        int value ;
+        int Value ;
         int Steep;
         
         
-        cout << "What is the vector value ";
-        cin >> value ;
-        cout<< "What is the steep of vector " ;
-        cin>> Steep;
+        cout << "What is the vector step ";
+        cin >> Steep ;
+        cout<< "What is the value of vector " ;
+        cin>> Value;
         
-        callByVector(value, Steep); 
+        callByVector(Steep, Value); 
+        
+        
 }
