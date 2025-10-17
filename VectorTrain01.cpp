@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <string>
 using namespace std;
 int callByVector(int a, int b) {
     
@@ -38,13 +39,23 @@ bool are_equal(T a, U b)
     
 int main() {
     
-    
+   /* 
     if (are_equal(10, 10.0))
       cout << "x and y are equal \n" ;
     else
       cout << "x and y are not equal \n";
-        
-    return 0;
+        */
+    
+    // First triying boolalpha alg.
+    
+    cout << boolalpha; // write with true false
+    
+    cout << are_equal(10,10.0) << endl;
+    cout << are_equal(10,19.0) << endl;
+    cout << are_equal('A',65) << endl;
+    cout << are_equal(string("hi"), "hi") << endl;
+    cout << are_equal(3.14,3) << endl;
+    
     
     /*
         
